@@ -1,0 +1,60 @@
+<html>
+  <head>
+    <title>Aula Media Query</title>
+    <style>
+        #coluna-1 {
+            color: white;
+            background: rgb(2,0,36);
+background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 35%, rgba(0,212,255,1) 100%);
+        }
+        
+        #coluna-2 {
+            color: white;
+            background: rgb(63,94,251);
+background: radial-gradient(circle, rgba(63,94,251,1) 0%, rgba(252,70,107,1) 100%);
+        }
+
+        .coluna {
+            width: 100%;
+            float: left;
+        }
+        @media (min-width: 800px) {
+            .coluna{
+                width: 50%;
+            }
+        }
+
+        #coluna-3 {
+            color: white;
+            background: rgb(131,58,180);
+background: linear-gradient(90deg, rgba(131,58,180,1) 0%, rgba(253,29,29,1) 50%, rgba(252,176,69,1) 100%);
+        }
+
+        @media (min-width: 1000px) {
+            .coluna{
+                width: 33.3%;
+            }
+        }
+
+
+    </style>
+  </head>
+
+  <body>
+        <div id="coluna-1" class="coluna"> 
+            Coluna 1
+        </div> 
+       
+        <div id="coluna-2" class="coluna">
+        Coluna 2
+    </div>
+
+    <div id="coluna-3" class="coluna">
+        Coluna 3
+    </div>
+  </body>
+
+
+
+
+</html>
