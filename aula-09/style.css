@@ -1,0 +1,38 @@
+.logopaçoca {
+    display: flex;
+    justify-content: center;
+}
+
+.imgpaçoca {
+    width: 25%;
+
+}
+
+.links {
+    text-align: center;
+    
+	
+	
+}
+
+.escritah3 {
+    text-align: center;
+
+}
+
+.coluna {
+     width: 100%;
+     float: left;
+}
+
+@media (min-width: 800px) {
+    .coluna{
+        width: 50%;
+    }
+}
+
+@media (min-width: 1200px) {
+    .coluna{
+        width: 25%;
+    }
+}
