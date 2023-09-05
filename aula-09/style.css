@@ -1,3 +1,11 @@
+body {
+    background: rgb(255,65,2);
+    background: radial-gradient(circle, rgba(255,65,2,1) 0%, rgba(205,252,69,1) 100%); 
+
+    }
+    
+
+
 .logopaçoca {
     display: flex;
     justify-content: center;
@@ -9,16 +17,24 @@
 }
 
 .links {
-    text-align: center;
-    
-	
-	
+    text-align: center;  
+		
 }
+.espaco{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 100%;
+    margin: 30px;
+}
+
 
 .escritah3 {
     text-align: center;
+    
 
 }
+
 
 .coluna {
      width: 100%;
@@ -35,4 +51,16 @@
     .coluna{
         width: 25%;
     }
+}
+
+
+.partefinal {
+    text-align: center;
+}
+
+
+.img {
+    display: flex;
+    justify-content: center;
+    
 }
