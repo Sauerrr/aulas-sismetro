@@ -11,9 +11,12 @@
 
 <body style="background: rgb(49,235,211);
 background: radial-gradient(circle, rgba(49,235,211,1) 3%, rgba(5,49,157,1) 99%);">
+
+
     <div class="row">
         <div class="col-4 offset-4">
-            Calculadora
+
+            <h1 style="text-align: center;">Calculadora</h1>
 
             <div class="row">
                 <div class="col-12">
@@ -24,18 +27,18 @@ background: radial-gradient(circle, rgba(49,235,211,1) 3%, rgba(5,49,157,1) 99%)
                     <div class="col-3">
                         <div class="d-grid gap-2">
 
-                            <button class="btn btn-dark" type="button">C</button>
-                            <button class="btn btn-dark" type="button">MR</button>
-                            <button class="btn btn-dark" type="button">MC</button>
-                            <button class="btn btn-dark" type="button">M+</button>
-                            <button class="btn btn-dark" type="button">M-</button>
+                            <button class="btn btn-danger" type="button">C</button>
+                            <button class="btn btn-danger" type="button">MR</button>
+                            <button class="btn btn-danger" type="button">MC</button>
+                            <button class="btn btn-danger" type="button">M+</button>
+                            <button class="btn btn-danger" type="button">M-</button>
                         </div>
                     </div>
                     <div class="col-6">
                         <div class="row">
                             <div class="col-8">
                                 <div class="d-grid gap-2">
-                                    <button class="btn btn-dark" type="button">&lt;x</button>
+                                    <button class="btn btn-dark" type="button" onclick="apagar()">&lt;x</button>
                                 </div>
                             </div>
                             <div class="col-4">
@@ -49,17 +52,64 @@ background: radial-gradient(circle, rgba(49,235,211,1) 3%, rgba(5,49,157,1) 99%)
                         <div class="row mt-2">
                             <div class="col-4">
                                 <div class="d-grid gap-2">
-                                    <button class="btn btn-dark" type="button">7</button>
+                                    <button class="btn btn-dark" type="button" onclick="insere_7()"> 7</button>
                                 </div>
                             </div>
                             <div class="col-4">
                                 <div class="d-grid gap-2">
-                                    <button class="btn btn-dark" type="button">8</button>
+                                    <button class="btn btn-dark" type="button" onclick="insere_8()">8</button>
                                 </div>
                             </div>
                             <div class="col-4">
                                 <div class="d-grid gap-2">
-                                    <button class="btn btn-dark" type="button">9</button>
+                                    <button class="btn btn-dark" type="button" onclick="insere_9()">9</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row mt-2">
+                            <div class="col-4">
+                                <div class="d-grid gap-2">
+                                    <button class="btn btn-dark" type="button" onclick="insere_4()">4</button>
+                                </div>
+                            </div>
+                            <div class="col-4">
+                                <div class="d-grid gap-2">
+                                    <button class="btn btn-dark" type="button" onclick="insere_5()">5</button>
+                                </div>
+                            </div>
+                            <div class="col-4">
+                                <div class="d-grid gap-2">
+                                    <button class="btn btn-dark" type="button" onclick="insere_6()">6</button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="row mt-2">
+                            <div class="col-4">
+                                <div class="d-grid gap-2">
+                                    <button class="btn btn-dark" type="button" onclick="insere_1()">1</button>
+                                </div>
+                            </div>
+                            <div class="col-4">
+                                <div class="d-grid gap-2">
+                                    <button class="btn btn-dark" type="button" onclick="insere_2()">2</button>
+                                </div>
+                            </div>
+                            <div class="col-4">
+                                <div class="d-grid gap-2">
+                                    <button class="btn btn-dark" type="button" onclick="insere_3()">3</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row mt-2">
+                            <div class="col-8">
+                                <div class="d-grid gap-2">
+                                    <button class="btn btn-dark" type="button" onclick="insere_0()">0</button>
+                                </div>
+                            </div>
+                            <div class="col-4">
+                                <div class="d-grid gap-2">
+                                    <button class="btn btn-dark" type="button">.</button>
                                 </div>
                             </div>
                         </div>
@@ -71,8 +121,8 @@ background: radial-gradient(circle, rgba(49,235,211,1) 3%, rgba(5,49,157,1) 99%)
                             <button class="btn btn-dark" type="button">/</button>
                             <button class="btn btn-dark" type="button">*</button>
                             <button class="btn btn-dark" type="button">-</button>
-                            <button class="btn btn-dark" type="button">+</button>
-                            <button class="btn btn-dark" type="button">=</button>
+                            <button class="btn btn-dark" type="button" onclick="efetuar_soma()">+</button>
+                            <button class="btn btn-dark" type="button" onclick="resultado()">=</button>
                         </div>
                     </div>
                 </div>
@@ -92,6 +142,8 @@ background: radial-gradient(circle, rgba(49,235,211,1) 3%, rgba(5,49,157,1) 99%)
 
         </div>
     </div>
+    
+    <img src="calc.png" style="width: 20rem;">
 
 
 
